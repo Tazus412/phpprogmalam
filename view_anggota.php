@@ -8,7 +8,7 @@ $query_view=mysqli_query($koneksi,"select * from anggota");
 		<td>No</td>
 		<td>Nama</td>
 		<td>Alamat</td>
-		<td>No Tlpn</td>
+		<td>No Telepon</td>
 	</tr>
 <?php 
 $no=1;
@@ -17,7 +17,7 @@ while($tampil=mysqli_fetch_array($query_view)){?>
 		<td><?php echo $no++;?></td>
 		<td><?php echo $tampil['nama'];?></td>
 		<td><?php echo $tampil['alamat'];?></td>
-		<td><?php echo $tampil['no_tlp'];?></td>
+		<td><?php echo $tampil['no_telepon'];?></td>
 	</tr>
 <?php }?>
 </table>
